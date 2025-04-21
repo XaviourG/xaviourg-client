@@ -1,0 +1,54 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  padding: 0;
+  margin: 0;
+  align-items: start;
+
+  --color-primary: #6F00FF;
+  --color-secondary: #6F00FF;
+  --color-background: #131628;
+  --color-foreground: #4e00b3;
+  --color-text: #ececeb;
+
+  color-scheme: light dark;
+  color: var(--color-text);
+  background-color: var(--color-background);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #6F00FF;
+    --color-secondary: #6F00FF;
+    --color-background: #ececeb;
+    --color-foreground: #4e00b3;
+    --color-text: #ececeb;
+  
+    color-scheme: light dark;
+    color: var(--color-text);
+    background-color: var(--color-background);
+  }
+}
+
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 ;
+  padding: 0 ;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  min-width: 320px;
+  min-height: 100vh;
+}
