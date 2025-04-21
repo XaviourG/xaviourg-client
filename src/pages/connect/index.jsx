@@ -17,7 +17,7 @@ const ConnectPage = ()  => {
         <div class='connect-grid'>
         {CONNECTION_TYPES.map((connection, index) => (
             <div class='connect-icon-button' style={{'--animation-order': (index%2) === 0 ? index : index - 1}}>
-                <a href={connection.redirect} class='connect-icon'>
+                <a href={connection.redirect} class='connect-icon' target="_blank" rel="noopener noreferrer">
                     {connection.icon}
                 </a>
             </div>
